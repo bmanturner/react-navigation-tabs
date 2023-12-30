@@ -38,7 +38,7 @@ export default function withDimensions<Props extends InjectedProps>(
 
     componentWillUnmount() {
       if (this.removeOrientationListener) {
-        this.removeOrientationListener();
+        this.removeOrientationListener.remove();
       }
     }
 
